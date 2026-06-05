@@ -228,7 +228,7 @@ h2 { font-size: clamp(2rem, 4.5vw, 4rem); line-height: 1.02; letter-spacing: -0.
   .nav-links { position: absolute; inset: 74px 20px auto; display: none; flex-direction: column; align-items: stretch; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 22px; padding: 12px; box-shadow: var(--shadow); }
   .nav-links.open { display: flex; }
   .nav-links a, .theme-toggle { text-align: left; }
-  h1 { font-size: clamp(2.8rem, 17vw, 4.3rem); }
+  h1 { font-size: clamp(2.7rem, 16vw, 4.2rem); }
   .project-grid { grid-template-columns: 1fr; }
   .bar-item { grid-template-columns: 1fr; gap: 8px; }
   .footer { flex-direction: column; gap: 12px; }
