@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manas Ghai — software engineer and MS CS student at NYU Courant working across backend systems, distributed infrastructure, algorithms, security, cryptography, computer vision, and teaching." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Manas | Software Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="network-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Manas Ghai home">
+        <span class="brand-mark">M</span>
+        <span class="brand-text">Manas</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#systems">Map</a>
+        <a href="#stack">Stack</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme">◐</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell reveal">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> NYU Courant · Software Systems · Algorithms · Security</div>
+        <h1>
+          I build <span class="gradient-text">software systems</span><br />
+          where theory meets engineering.
+        </h1>
+        <p class="hero-subtitle">
+          MS Computer Science student at NYU Courant. Former backend engineer at Toppr/Byju’s, SDE intern at Amazon, and course staff for algorithms at NYU. I work across backend infrastructure, distributed systems, algorithms, security, cryptography, and applied AI.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://github.com/manas0" target="_blank" rel="noreferrer">View GitHub</a>
+          <a class="btn secondary" href="#experience">Explore Experience</a>
+          <button class="btn ghost" id="open-command">⌘K Command Menu</button>
+        </div>
+        <div class="hero-metrics" aria-label="Highlights">
+          <div>
+            <strong data-count="5">0</strong>
+            <span>industry & research roles</span>
+          </div>
+          <div>
+            <strong data-count="7">0</strong>
+            <span>teaching roles</span>
+          </div>
+          <div>
+            <strong data-count="12">0</strong>
+            <span>technical domains</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Developer profile card">
+        <div class="card-orbit orbit-one"></div>
+        <div class="card-orbit orbit-two"></div>
+        <div class="terminal-card">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code><span class="muted">$</span> whoami
+Manas Ghai
+
+<span class="muted">$</span> focus --now
+Backend platforms
+Distributed infrastructure
+Algorithms & systems
+Cryptography & security
+Computer vision & AI
+Teaching CS
+
+<span class="muted">$</span> status
+<span class="ok">●</span> building practical, reliable software</code></pre>
+        </div>
+      </aside>
+    </section>
+
+    <section class="marquee" aria-label="Technical interests">
+      <div class="marquee-track">
+        <span>Distributed Systems</span><span>Backend Platforms</span><span>Schedulers</span><span>Dead-Letter Queues</span><span>Go</span><span>C++</span><span>Python</span><span>Operating Systems</span><span>Algorithms</span><span>Cryptography</span><span>Post-Quantum Crypto</span><span>Computer Vision</span><span>OpenMP</span><span>MPI</span><span>Docker</span><span>AWS</span><span>Teaching</span>
+        <span>Distributed Systems</span><span>Backend Platforms</span><span>Schedulers</span><span>Dead-Letter Queues</span><span>Go</span><span>C++</span><span>Python</span><span>Operating Systems</span><span>Algorithms</span><span>Cryptography</span><span>Post-Quantum Crypto</span><span>Computer Vision</span><span>OpenMP</span><span>MPI</span><span>Docker</span><span>AWS</span><span>Teaching</span>
+      </div>
+    </section>
+
+    <section class="section shell reveal" id="work">
+      <div class="section-heading">
+        <p class="section-kicker">Selected builds</p>
+        <h2>Systems-minded projects, not just scripts.</h2>
+        <p>These projects are framed around architecture, reliability, clean implementation, and practical workflows. Use the filters to skim by area.</p>
+      </div>
+
+      <div class="filter-row" aria-label="Project filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="systems">Systems</button>
+        <button class="chip" data-filter="backend">Backend</button>
+        <button class="chip" data-filter="teaching">Teaching</button>
+        <button class="chip" data-filter="ai">AI / CV</button>
+        <button class="chip" data-filter="security">Security</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured" data-category="systems backend">
+          <div class="project-topline"><span>Distributed Infrastructure</span><span>01</span></div>
+          <h3>HelixQueue</h3>
+          <p>A background job system with worker agents, task leases, heartbeats, retries, dead-letter queues, metrics, containerized deployment, and local cluster workflows.</p>
+          <div class="tag-row"><span>Workers</span><span>Leases</span><span>DLQ</span><span>Metrics</span></div>
+          <a href="https://github.com/manas0/helixqueue" target="_blank" rel="noreferrer">Open repository →</a>
+        </article>
+
+        <article class="project-card" data-category="backend systems">
+          <div class="project-topline"><span>Backend Operations</span><span>02</span></div>
+          <h3>ShelfWise</h3>
+          <p>Inventory and order-fulfillment backend with APIs, CLI tools, persistence, reservation logic, stock movements, reporting, data import/export, and tests.</p>
+          <div class="tag-row"><span>REST</span><span>Storage</span><span>CLI</span><span>Reports</span></div>
+          <a href="https://github.com/manas0/shelfwise" target="_blank" rel="noreferrer">Open repository →</a>
+        </article>
+
+        <article class="project-card" data-category="teaching backend">
+          <div class="project-topline"><span>Developer Tools</span><span>03</span></div>
+          <h3>PyCourseKit</h3>
+          <p>A grading and feedback toolkit for programming courses with assignment specs, hidden/public tests, static analysis, timeouts, and instructor-facing workflows.</p>
+          <div class="tag-row"><span>Autograding</span><span>AST</span><span>Tests</span><span>CLI</span></div>
+          <a href="https://github.com/manas0/pycoursekit" target="_blank" rel="noreferrer">Open repository →</a>
+        </article>
+
+        <article class="project-card" data-category="ai backend">
+          <div class="project-topline"><span>Document Intelligence</span><span>04</span></div>
+          <h3>DocuVision</h3>
+          <p>Document extraction and search toolkit with OCR-style preprocessing, text indexing, image processing utilities, and searchable document workflows.</p>
+          <div class="tag-row"><span>OCR</span><span>Indexing</span><span>Search</span><span>Vision</span></div>
+          <a href="https://github.com/manas0/docuvision" target="_blank" rel="noreferrer">Open repository →</a>
+        </article>
+
+        <article class="project-card" data-category="security algorithms">
+          <div class="project-topline"><span>Security Engineering</span><span>05</span></div>
+          <h3>CryptoLab</h3>
+          <p>Security and cryptography experiments covering hashing, HMAC search indexes, encrypted notes, toy elliptic-curve examples, and careful educational demos.</p>
+          <div class="tag-row"><span>Crypto</span><span>HMAC</span><span>ECC</span><span>Integrity</span></div>
+          <a href="https://github.com/manas0/cryptolab-py" target="_blank" rel="noreferrer">Open repository →</a>
+        </article>
+
+        <article class="project-card" data-category="algorithms teaching">
+          <div class="project-topline"><span>Algorithms</span><span>06</span></div>
+          <h3>Algorithmic Toolkit</h3>
+          <p>Reference implementations for graphs, dynamic programming, greedy methods, string matching, disjoint sets, complexity notes, and tested examples.</p>
+          <div class="tag-row"><span>Graphs</span><span>DP</span><span>KMP</span><span>Union-Find</span></div>
+          <a href="https://github.com/manas0/algorithms-in-python" target="_blank" rel="noreferrer">Open repository →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell reveal" id="experience">
+      <div class="section-heading">
+        <p class="section-kicker">Experience</p>
+        <h2>Industry, teaching, research, and systems work.</h2>
+        <p>A fuller snapshot of the path behind the projects: backend platforms, reliability, education technology, algorithms teaching, cryptography, computer vision, and applied AI.</p>
+      </div>
+
+      <div class="experience-board">
+        <article class="experience-card highlight">
+          <span>2023 — 2025</span>
+          <h3>Co-founder & CTO · Manas Vision</h3>
+          <p>Built AI-driven image processing and automation workflows, including RFID-based attendance systems, data recovery with error-correcting codes, disk forensics, and anomaly detection.</p>
+          <div class="tag-row"><span>AI Automation</span><span>Forensics</span><span>RFID</span><span>ECC</span></div>
+        </article>
+        <article class="experience-card">
+          <span>2022</span>
+          <h3>Software Engineer · Byju’s</h3>
+          <p>Worked on Scheduler as a Service in Go for a high-volume delayed-jobs system, improving reliability and reducing backend 5xx errors.</p>
+          <div class="tag-row"><span>Go</span><span>Schedulers</span><span>Reliability</span><span>Microservices</span></div>
+        </article>
+        <article class="experience-card">
+          <span>2021 — 2022</span>
+          <h3>Backend Engineer · Toppr</h3>
+          <p>Contributed to education platforms supporting teachers, students, batches, classes, tests, fee workflows, backend security, OTP limiting, and internal admin tooling.</p>
+          <div class="tag-row"><span>Backend</span><span>Security</span><span>EdTech</span><span>Admin Tools</span></div>
+        </article>
+        <article class="experience-card">
+          <span>2021</span>
+          <h3>SDE Intern · Amazon</h3>
+          <p>Worked on event-bus reliability, dead-letter queue sizing, zombie process cleanup, latency reduction, throughput improvement, and security hardening.</p>
+          <div class="tag-row"><span>DLQ</span><span>Latency</span><span>Reliability</span><span>Security</span></div>
+        </article>
+        <article class="experience-card">
+          <span>2025 — 2026</span>
+          <h3>Course Staff · NYU Courant</h3>
+          <p>Recitation leader, course assistant, grader, and tutor for algorithms courses; supported recitations, grading, office hours, announcements, regrades, proofs, and runtime analysis.</p>
+          <div class="tag-row"><span>Algorithms</span><span>Teaching</span><span>Grading</span><span>Student Support</span></div>
+        </article>
+        <article class="experience-card">
+          <span>2020</span>
+          <h3>Teaching Assistant · IIT Jammu</h3>
+          <p>Led recitation-style tutorials for Discrete Mathematical Structures, supported grading, doubt-clearing, feedback, and alignment between lectures and assessments.</p>
+          <div class="tag-row"><span>Discrete Math</span><span>Recitations</span><span>Mentoring</span><span>Feedback</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell split reveal" id="systems">
+      <div class="section-heading compact">
+        <p class="section-kicker">Engineering map</p>
+        <h2>Not one-lane engineering.</h2>
+        <p>The center of gravity is software systems, but the surrounding toolkit includes algorithms, OS, distributed computing, security, math, AI, and teaching.</p>
+      </div>
+      <div class="skill-panel">
+        <div class="bar-item"><span>Backend & Systems</span><div class="bar"><i style="--w: 94%"></i></div><b>94</b></div>
+        <div class="bar-item"><span>Algorithms & Theory</span><div class="bar"><i style="--w: 92%"></i></div><b>92</b></div>
+        <div class="bar-item"><span>Distributed Computing</span><div class="bar"><i style="--w: 88%"></i></div><b>88</b></div>
+        <div class="bar-item"><span>Security & Cryptography</span><div class="bar"><i style="--w: 86%"></i></div><b>86</b></div>
+        <div class="bar-item"><span>AI / Computer Vision</span><div class="bar"><i style="--w: 82%"></i></div><b>82</b></div>
+        <div class="bar-item"><span>Teaching & Communication</span><div class="bar"><i style="--w: 90%"></i></div><b>90</b></div>
+      </div>
+    </section>
+
+    <section class="section shell reveal" id="stack">
+      <div class="section-heading">
+        <p class="section-kicker">Toolbox</p>
+        <h2>A broad engineering stack.</h2>
+        <p>Browse by category. The stack spans production backend work, research prototypes, systems coursework, teaching, and applied AI.</p>
+      </div>
+      <div class="stack-tabs" role="tablist" aria-label="Technology categories">
+        <button class="stack-tab active" data-stack="languages">Languages</button>
+        <button class="stack-tab" data-stack="backend">Backend & Infra</button>
+        <button class="stack-tab" data-stack="systems">Systems & HPC</button>
+        <button class="stack-tab" data-stack="ai">AI / Scientific</button>
+        <button class="stack-tab" data-stack="security">Security / Quantum</button>
+        <button class="stack-tab" data-stack="tools">Tools & Platforms</button>
+      </div>
+      <div class="stack-cloud" id="stack-cloud" aria-live="polite"></div>
+    </section>
+
+    <section class="section shell reveal" id="research">
+      <div class="section-heading">
+        <p class="section-kicker">Research & technical depth</p>
+        <h2>Projects rooted in math, security, and AI.</h2>
+      </div>
+      <div class="research-grid">
+        <article class="research-card">
+          <h3>Quantum Computing & Post-Quantum Cryptography</h3>
+          <p>Research on Falcon, lattice-based signatures, LLL/BKZ, Gaussian sampling, Fourier transforms, and quantum/classical attack resistance.</p>
+        </article>
+        <article class="research-card">
+          <h3>Text Recognition Library</h3>
+          <p>OCR and document text extraction work combining image processing, machine learning methods, and accessible learning material workflows.</p>
+        </article>
+        <article class="research-card">
+          <h3>FUTURE Cipher</h3>
+          <p>Lightweight cipher implementation with C++ software implementation and VHDL hardware exploration for efficient cryptographic design.</p>
+        </article>
+        <article class="research-card">
+          <h3>Searchable Encryption with ECC</h3>
+          <p>Cloud-storage security research using elliptic curve cryptography, SHA-256, and searchable public-key encryption ideas.</p>
+        </article>
+        <article class="research-card">
+          <h3>GAN-based Image Generation</h3>
+          <p>Work on stabilizing generative adversarial networks using spectral normalization and feature matching.</p>
+        </article>
+        <article class="research-card">
+          <h3>Satellite Image Tagging</h3>
+          <p>Deep learning internship project using a VGG-style CNN to assign labels to satellite images.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell reveal" id="achievements">
+      <div class="achievement-strip">
+        <div>
+          <span>Institute Rank</span>
+          <strong>8</strong>
+          <p>IIT Jammu</p>
+        </div>
+        <div>
+          <span>ACM ICPC</span>
+          <strong>Regionals</strong>
+          <p>Kharagpur & Kolkata-Kanpur</p>
+        </div>
+        <div>
+          <span>JEE Main</span>
+          <strong>99.9%</strong>
+          <p>All India Rank 2263</p>
+        </div>
+        <div>
+          <span>Google</span>
+          <strong>TIC</strong>
+          <p>Tech Intern Connect invitee</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell reveal">
+      <div class="terminal-wide">
+        <div class="terminal-top"><span></span><span></span><span></span></div>
+        <div class="terminal-body">
+          <p><span class="muted">manas@github</span>:<span class="accent">~</span>$ ./build-profile --focus</p>
+          <p class="type-line" id="type-line"></p>
+          <p><span class="ok">✔</span> backend systems and reliability</p>
+          <p><span class="ok">✔</span> algorithms, proofs, and performance</p>
+          <p><span class="ok">✔</span> security, AI, and research depth</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell contact-card reveal" id="contact">
+      <div>
+        <p class="section-kicker">Let’s connect</p>
+        <h2>Interested in systems, algorithms, security, AI, and teaching.</h2>
+        <p>Open to technical conversations, teaching opportunities, research collaborations, and software engineering work.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn primary" href="mailto:mg8527@nyu.edu">Email me</a>
+        <a class="btn secondary" href="https://linkedin.com/in/manas-ghai-1a9327188" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/manas0" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <span>© <span id="year"></span> Manas Ghai</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="command-modal" id="command-modal" role="dialog" aria-modal="true" aria-labelledby="command-title" hidden>
+    <div class="command-box">
+      <div class="command-header">
+        <h2 id="command-title">Command Menu</h2>
+        <button id="close-command" aria-label="Close command menu">×</button>
+      </div>
+      <input id="command-input" type="text" placeholder="Type: github, experience, research, stack, email, linkedin..." autocomplete="off" />
+      <div class="command-list" id="command-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
