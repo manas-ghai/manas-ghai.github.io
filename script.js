@@ -125,7 +125,7 @@ const closeCommand = document.getElementById("close-command");
 const commandInput = document.getElementById("command-input");
 const commandList = document.getElementById("command-list");
 const commands = [
-  { key: "github", label: "Open GitHub", hint: "github.com/", action: () => window.open("https://github.com/", "_blank") },
+  { key: "github", label: "Open GitHub", hint: "github.com/manas-ghai", action: () => window.open("https://github.com/manas-ghai", "_blank") },
   { key: "work projects", label: "Jump to Work", hint: "Selected builds", action: () => location.hash = "#work" },
   { key: "experience", label: "Jump to Experience", hint: "Industry, teaching, research", action: () => location.hash = "#experience" },
   { key: "map systems", label: "Jump to Engineering Map", hint: "Technical center of gravity", action: () => location.hash = "#systems" },
